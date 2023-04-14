@@ -1,0 +1,527 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: content-box;
+    /* outline: 1px solid red; */
+    font-size: 62.5%;
+}
+body{
+
+    margin: 0 auto;
+    width: 700px;
+}
+:root{
+    --color1: #046081;
+    --color2: #00A8C8;
+    --color3: #F08D25;
+    --colors1: #F0D7D0;
+    --colors2: #EFD9C8;
+    --colors3: #D99A79;
+    --colors4: #D49583;
+    --colors5: #855E4C;
+    --colors6: #634B47;}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+header nav{
+    margin-left: 80px;
+    height: 55px;
+}
+.container-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    height: 500px;
+    background-image: linear-gradient(90deg,rgba(255,255,255,1),
+    rgba(255,255,255,0.6),
+    rgba(255,255,255,0),
+    rgba(255,255,255,0.1),
+    rgba(255,255,255,1)),
+    url("./images/image-main.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    overflow: hidden;
+}
+.wrap-main{
+    padding-left: 100px;
+}
+.title-main, .subtitle-main,
+span, .hashtag{
+            width: 260px;
+        }
+.title-main{
+    color: var(--color1);
+    font-size:3.5rem;
+}
+span{
+    color: var(--color2);
+    font-size:3.5rem;
+}
+.subtitle-main{
+    padding-top: 20px;
+    font-size: 1.5rem;
+    color:var(--color1);
+    font-weight:600;
+}
+.hashtag{
+    font-size: 2rem;
+    color: var(--color2);
+    font-weight: 600;
+    padding: 30px 0;
+}
+.btn{
+    width: 170px;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    color: white;
+    background-color: var(--color3);
+    cursor: pointer;
+    border: none;
+}
+.btn:hover{
+    color:var(--color3);
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+.icon-down{
+    display: flex;
+    padding-top: 2;
+    font-size: 4rem;
+    color: #F08D25;
+    margin: auto;
+}
+
+.content-table{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 350px;
+    background-color: #72A5C0;
+    color: white;
+}
+.content-title{
+    font-size: 2.3rem;
+}
+.content-table ol li a{
+    color: white;
+    text-decoration: none;
+}
+.content-table ol>li{
+    font-size: 2rem;
+    line-height: 2;
+}
+
+.type-skin{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.type-skin .title{
+    font-size: 2rem;
+    color:var(--color1);
+    padding-top: 30px;
+}
+.type-skin span{
+    font-size: 2rem;
+    color:var(--color2);
+}
+.type-skin .subtitle{
+    font-size: 1rem;
+    color:var(--color1);
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-content .card{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;}
+.card-container .card-content{
+    width: 100px;
+    height: 200px;
+    border-top-right-radius: 25px;
+}
+
+
+.card-container .card-content img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    
+}
+.caption-title{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.5rem;
+    color: var(--colors4);}
+.caption-subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--colors4);
+    padding-bottom: 10px;}
+.caption-paragraph{
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    width: 70%;
+    margin: 0px auto;}
+    
+.card-content .card-1{
+    border-top: 15px solid var(--colors1);
+    border-bottom: 15px solid var(--colors1);
+    box-shadow: 0px 0px 10px gray;
+    overflow: hidden;}
+.card-content .card-1:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 10px gray;
+    z-index: 10;
+    cursor: pointer;
+
+    overflow: visible;}
+
+.card-content .card-2{
+    border-top: 15px solid var(--colors2);
+    border-bottom: 15px solid var(--colors2);
+    overflow: hidden;}
+.card-content .card-2:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 10px gray;
+    z-index: 10;
+    cursor: pointer;
+    overflow: visible;}
+
+.card-content .card-3{
+    border-top: 15px solid var(--colors3);
+    border-bottom: 15px solid var(--colors3);
+    overflow: hidden;
+}
+.card-content .card-3:hover{
+        transform: scale(1.1);
+        transition: all 0.2s ease;
+        box-shadow: 0px 0px 10px gray;
+        z-index: 10;
+        cursor: pointer;
+        overflow: visible;}
+.card-content .card-3::selection{
+    overflow: visible;
+    transform: scale(5.1);
+}
+
+.card-content .card-4{
+    border-top: 15px solid var(--colors4);
+    border-bottom: 15px solid var(--colors4);
+    overflow: hidden;}
+.card-content .card-4:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 10px gray;
+    z-index: 10;
+    cursor: pointer;
+    overflow: visible;}
+
+.card-content .card-5{
+    border-top: 15px solid var(--colors5);
+    border-bottom: 15px solid var(--colors5);
+    overflow: hidden;}
+.card-content .card-5:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+    box-shadow: 0px 0px 10px gray;
+    z-index: 10;
+    cursor: pointer;
+    overflow: visible;}
+
+.card-content .card-6{
+    border-top: 15px solid var(--colors6);
+    border-bottom: 15px solid var(--colors6);
+    overflow: hidden;}
+.card-content .card-6:hover{
+        transform: scale(1.1);
+        transition: all 0.2s ease;
+        box-shadow: 0px 0px 10px gray;
+        z-index: 10;
+        cursor: pointer;
+        overflow: visible;}
+.space-section{
+    height: 300px;
+    width: 100%;
+}
+
+.skin-protect{
+    width: 100%;
+    height: 100%;
+    background-color: #CFEAEE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.skin-protect .title{
+    font-size: 2rem;
+    color:var(--color1);
+    padding-top: 50px;
+}
+.skin-protect .subtitle{
+    font-size: 1rem;
+    color:var(--color1);
+    width: 430px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.skin-protect span{
+    font-size: 2rem;
+    color:var(--color2);
+}
+.slider{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.slider-blockp{
+    position:relative;
+    width: 10px;
+
+}
+.slider-prev,
+.slider-next{
+    width: 20px;
+    padding: 0;
+    font-size: 3rem;
+    border: none;
+    color: var(--color3);
+    background-color: transparent;
+    cursor: pointer;
+}
+.slider-prev:hover,
+.slider-next:hover{
+    transition: all 0.5s ease;
+    transform: scale(1.5);
+}
+.slider-blockn{
+    position:relative;
+    width: 10px;
+
+}
+
+.slider-container{
+    display: flex;
+    align-items:stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 85%;
+    height: 310px;
+    gap: 10px;
+    overflow: hidden;
+}
+.slider-item{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    height: 300px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 1px 1px 5px lightgray;
+}
+.slider-item img{
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    margin: 25px auto;
+}
+.slider-text{
+    text-align: center;
+    padding: 10px;
+    
+}
+.slider-text p:nth-of-type(1){
+    font-size: 1.5rem;
+    color:var(--color2);
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.slider-text p:nth-of-type(2){
+    font-size: 1rem;
+    color:gray;
+    padding-bottom: 10px;
+}
+.footer-protect{
+    font-size: 1rem;
+    color: var(--color2);
+    width: 430px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+.skin-protect .btn{
+    margin-bottom: 60px;
+}
+.identify{
+    display: flex;
+   position: relative;
+   width: 100%;
+background-color: #D1CCDC;    
+}
+.text-ident{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.text-ident .title-ident{
+    padding: 20px;
+    text-align: center;
+    font-size: 2.3rem;
+    color: var(--color1);
+}
+
+.text-ident .subtitle-ident{
+    text-align: center;
+    width: 80%;
+    font-size: 1rem;
+    color: gray;
+    padding-bottom: 10px;
+}
+.text-ident .btn{
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+
+}
+
+.image-ident img{
+    position: relative;
+    height: 100%;
+    width: 280px;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+
+}
+
+.treat{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    padding: 50px 0 ;   
+}
+.title-treat >h1{
+    text-align: center;
+    font-size: 2.2rem;
+    color: var(--color1);
+}
+.title-treat span{
+    font-size: 2rem;
+    color: var(--color2);
+}
+.title-treat >p{
+    text-align: center;
+    padding: 30px;
+    font-size: 1rem;
+    color: gray;
+}
+.wraper-treat{
+    width: 100%;
+    background-color: #FCFCFC;
+}
+.container-treat{
+    padding-left: 25px;
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+.text-article{
+    text-align: left;
+    width: 70%;
+    padding-right: 55px;
+    border-bottom: 1px dashed var(--color2);
+}
+.text-article p:nth-of-type(1){
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color1);
+    padding: 30px 0 10px 0;
+    
+}
+.text-article p:nth-of-type(2){
+    font-size: 1rem;
+    font-weight: bold;
+    color: gray;
+    padding-bottom: 30px;
+    
+}
+.radio,
+.surgery,
+.chemotherapy{
+    display: flex;
+}
+.radio .image-article,
+.surgery .image-article,
+.chemotherapy .image-article
+{
+    display: flex;
+    justify-content: center;
+    width: 45%;
+    background-color: white;
+    border-bottom: 1px dashed var(--color2);
+    box-shadow: 1px 1px 1px lightgray;
+}
+.radio img,
+.surgery img,
+.chemotherapy img{
+    width: 80%;
+    padding: 20px;
+
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 55px;
+    background-color: #046081;
+    left: 0;
+}
+footer>p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 auto;
+    color: white;
+    opacity: 0.5;
+    font-size: 1.3rem;
+}
